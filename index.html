@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window 10 | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/littles.css">
+    <link rel="stylesheet" href="Styles/taskbar.css">
+    <link rel="stylesheet" href="Styles/screen.css">
+    <link rel="stylesheet" href="Media-Queries/responsive.css">
+</head>
+
+<body>
+    <div class="screen">
+        <!-- Background -->
+        <div class="backgroundDiv">
+            <video class="background" autoplay loop muted>
+                <source src="Resources/laptopbg.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="screen2">
+            <!-- On Screen Apps -->
+            <div class="app-container user-select-none">
+                <img class="appIcon user-select-none" src="Resources/screen-apps/recycle-bin.png" alt="app icon">
+                <p class="appName user-select-none">Recycle Bin</p>
+            </div>
+            <div class="app-container user-select-none">
+                <img class="appIcon user-select-none" src="Resources/screen-apps/this-pc.png" alt="app icon">
+                <p class="appName user-select-none">This PC</p>
+            </div>
+            <div class="app-container user-select-none">
+                <img class="appIcon user-select-none" src="Resources/screen-apps/vsCode.png" alt="app icon">
+                <p class="appName user-select-none">Visual Studio Code</p>
+            </div>
+            <div class="app-container user-select-none">
+                <img class="appIcon user-select-none" src="Resources/screen-apps/opera.png" alt="app icon">
+                <p class="appName user-select-none">Opera GX</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="taskbar flex">
+        <div class="windowLogo pointer">
+            <i class="ri-windows-fill windowIcon"></i>
+        </div>
+        <div class="searchBarDiv relative flex pointer user-select-none">
+            <div class="searchIconDiv">
+                <i class="ri-search-line searchIcon center2"></i>
+            </div>
+            <input class="searchBar" type="text" placeholder="Type here to search">
+            <div class="bingShortcut">
+                <img class="bingIcon user-select-none" src="Resources/bingIcon.png" alt="Icon Here">
+            </div>
+        </div>
+
+        <div class="taskView pointer">
+            <i class="ri-carousel-view taskViewIcon center2 user-select-none"></i>
+        </div>
+
+        <div class="taskBarApps flex user-select-none">
+            <div class="appDiv pointer"><img class="app vsCode center2 user-select-none" src="Resources/apps/vsCode.png"
+                    alt=""></div>
+            <div class="appDiv pointer"><img class="app opera center2 user-select-none" src="Resources/apps/opera.png"
+                    alt=""></div>
+            <div class="appDiv pointer"><img class="app whatsapp center2 user-select-none"
+                    src="Resources/apps/whatsapp.png" alt="">
+            </div>
+            <div class="appDiv pointer"><img class="app fileManager center2 user-select-none"
+                    src="Resources/apps/fileManager.png" alt="">
+            </div>
+            <div class="appDiv pointer"><img class="app microsoftStore center2 user-select-none"
+                    src="Resources/apps/microsoftStore.png" alt=""></div>
+            <div class="appDiv pointer"><img class="app discord center2 user-select-none"
+                    src="Resources/apps/discord.png" alt=""></div>
+        </div>
+
+        <div class="right-side-matter flex absolute user-select-none">
+            <div class="show-hidden-icons pointer relative user-select-none">
+                <i class="ri-arrow-up-s-line center2"></i>
+            </div>
+            <div class="wifi pointer relative user-select-none">
+                <i class="ri-wifi-line center2"></i>
+            </div>
+            <div class="battery pointer relative user-select-none">
+                <i class="ri-battery-fill center2"></i>
+            </div>
+            <div class="volume pointer relative user-select-none">
+                <i class="ri-volume-up-line center2"></i>
+            </div>
+            <div class="clock flex pointer relative user-select-none">
+                <div class="timeDiv"><span class="time"></span></div>
+                <div class="dateDiv"><span class="date"></span></div>
+            </div>
+            <div class="notifications pointer relative user-select-none">
+                <i class="ri-notification-2-line center2"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

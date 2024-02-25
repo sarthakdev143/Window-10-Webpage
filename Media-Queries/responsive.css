@@ -1,0 +1,18 @@
+@media screen and (max-width: 1000px) {
+    .taskbar {
+        .windowLogo .windowIcon {
+            font-size: 5vw;
+        }
+
+        .taskBarApps,
+        .right-side-matter {
+            display: none;
+        }
+
+        .searchBarDiv {
+            margin-left: auto;
+            width: 50%;
+            height: 70%;
+        }
+    }
+}

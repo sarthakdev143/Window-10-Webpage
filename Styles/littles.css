@@ -1,0 +1,47 @@
+.flex {
+    display: flex;
+}
+
+.center1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.gap {
+    gap: 5vw;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.list-style-none {
+    list-style-type: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.center2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flex {
+    display: flex;
+}
+
+.user-select-none {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}

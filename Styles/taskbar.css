@@ -1,0 +1,193 @@
+.taskbar {
+    --background: rgb(37, 37, 37);
+    --height: 6.3vh;
+    --iconColor: #fff;
+    --iconHoverBG: rgb(53, 53, 53);
+    --fontFamily: 'Poppins', sans-serif;
+
+    position: absolute;
+    bottom: -0.3vh;
+    width: 100%;
+    height: var(--height);
+    background: var(--background);
+    z-index: 1;
+
+    .windowLogo {
+        position: relative;
+        height: var(--height);
+        width: var(--height);
+        background: var(--background);
+
+        .windowIcon {
+            position: absolute;
+            color: var(--iconColor);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            font-size: 1.6vw;
+        }
+
+        &:hover {
+            background: var(--iconHoverBG);
+
+            .windowIcon {
+                color: #ececec;
+            }
+        }
+    }
+
+    .searchBarDiv {
+        border: #929292 0.1vw solid;
+        width: max-content;
+        height: var(--height);
+        background: #585858;
+        align-content: center;
+
+        .searchIconDiv {
+            width: 3vw;
+            height: inherit;
+            position: relative;
+
+            .searchIcon {
+                color: var(--iconColor);
+                position: absolute;
+                top: 25%;
+                left: 25%;
+                transform: translate(-50%, -50%);
+                font-size: 1.5vw;
+
+                -moz-transform: scale(-1, 1);
+                -webkit-transform: scale(-1, 1);
+                -o-transform: scale(-1, 1);
+                -ms-transform: scale(-1, 1);
+                transform: scale(-1, 1);
+            }
+        }
+
+        .searchBar {
+            height: var(--height);
+            width: 12vw;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 1vw;
+            color: #fff;
+
+            &:focus {
+                background: #fff;
+                color: #000;
+            }
+
+            &:focus::placeholder {
+                color: #000;
+            }
+        }
+
+        .searchBar::placeholder {
+            color: #cecece;
+            font-size: 1vw;
+            font-family: var(--fontFamily);
+        }
+
+        .bingShortcut {
+            position: relative;
+
+            .bingIcon {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: calc(var(--height) * 0.8);
+                width: 4.8vw;
+                height: auto;
+
+                &:hover {
+                    filter: brightness(0.9);
+                }
+            }
+        }
+    }
+
+    .taskView {
+        position: relative;
+        height: inherit;
+        width: 3.5vw;
+
+        .taskViewIcon {
+            color: var(--iconColor);
+            font-size: 1.3vw;
+        }
+
+        &:hover {
+            background: var(--iconHoverBG);
+        }
+    }
+
+    .taskBarApps {
+        width: fit-content;
+        height: inherit;
+        gap: 0.5vw;
+
+        .appDiv {
+            height: inherit;
+            width: var(--height);
+            position: relative;
+
+            &:hover {
+                background: var(--iconHoverBG);
+            }
+        }
+
+        .discord {
+            border-radius: 50%;
+        }
+
+        .app {
+            width: 2vw;
+            height: auto;
+            vertical-align: middle;
+        }
+    }
+
+    .right-side-matter {
+        width: fit-content;
+        height: inherit;
+        border-right: 0.1vw solid grey;
+        right: 0.4vw;
+        padding-right: 0.5vw;
+
+        .show-hidden-icons,
+        .wifi,
+        .battery,
+        .volume,
+        .notifications {
+            font-size: 1.2vw;
+            color: var(--iconColor);
+            width: calc(var(--height)* 0.6);
+        }
+
+        .clock {
+            color: var(--iconColor);
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 0.5vw;
+            text-align: center;
+
+            span {
+                font-size: 0.8vw;
+            }
+        }
+
+        .show-hidden-icons,
+        .wifi,
+        .battery,
+        .volume,
+        .notifications,
+        .clock {
+            &:hover {
+                background: var(--iconHoverBG);
+            }
+        }
+    }
+}
