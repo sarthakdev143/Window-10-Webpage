@@ -1,8 +1,8 @@
 .taskbar {
-    --background: rgb(37, 37, 37);
+    --background: rgb(44, 44, 44);
     --height: 6.3vh;
     --iconColor: #fff;
-    --iconHoverBG: rgb(53, 53, 53);
+    --iconHoverBG: rgb(64, 64, 64);
     --fontFamily: 'Poppins', sans-serif;
 
     position: absolute;
@@ -10,7 +10,7 @@
     width: 100%;
     height: var(--height);
     background: var(--background);
-    z-index: 1;
+    z-index: 10;
 
     .windowLogo {
         position: relative;
@@ -161,7 +161,7 @@
         .wifi,
         .battery,
         .volume,
-        .notifications {
+        .notifications-icon {
             font-size: 1.2vw;
             color: var(--iconColor);
             width: calc(var(--height)* 0.6);
@@ -183,7 +183,7 @@
         .wifi,
         .battery,
         .volume,
-        .notifications,
+        .notifications-icon,
         .clock {
             &:hover {
                 background: var(--iconHoverBG);

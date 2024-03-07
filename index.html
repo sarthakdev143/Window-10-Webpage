@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Window 10 | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="Styles/styles.css">
     <link rel="stylesheet" href="Styles/littles.css">
     <link rel="stylesheet" href="Styles/taskbar.css">
     <link rel="stylesheet" href="Styles/screen.css">
+    <link rel="stylesheet" href="Styles/notification.css">
     <link rel="stylesheet" href="Media-Queries/responsive.css">
 </head>
 
@@ -43,11 +46,11 @@
         </div>
     </div>
 
-    <div class="taskbar flex">
+    <div class="taskbar flex user-select-none">
         <div class="windowLogo pointer">
             <i class="ri-windows-fill windowIcon"></i>
         </div>
-        <div class="searchBarDiv relative flex pointer user-select-none">
+        <div class="searchBarDiv relative flex pointer">
             <div class="searchIconDiv">
                 <i class="ri-search-line searchIcon center2"></i>
             </div>
@@ -58,12 +61,12 @@
         </div>
 
         <div class="taskView pointer">
-            <i class="ri-carousel-view taskViewIcon center2 user-select-none"></i>
+            <i class="ri-carousel-view taskViewIcon center2"></i>
         </div>
 
-        <div class="taskBarApps flex user-select-none">
-            <div class="appDiv pointer"><img class="app vsCode center2 user-select-none" src="Resources/apps/vsCode.webp"
-                    alt=""></div>
+        <div class="taskBarApps flex">
+            <div class="appDiv pointer"><img class="app vsCode center2 user-select-none"
+                    src="Resources/apps/vsCode.webp" alt=""></div>
             <div class="appDiv pointer"><img class="app opera center2 user-select-none" src="Resources/apps/opera.webp"
                     alt=""></div>
             <div class="appDiv pointer"><img class="app whatsapp center2 user-select-none"
@@ -78,25 +81,141 @@
                     src="Resources/apps/discord.webp" alt=""></div>
         </div>
 
-        <div class="right-side-matter flex absolute user-select-none">
-            <div class="show-hidden-icons pointer relative user-select-none">
+        <div class="right-side-matter flex absolute">
+            <div class="show-hidden-icons pointer relative">
                 <i class="ri-arrow-up-s-line center2"></i>
             </div>
-            <div class="wifi pointer relative user-select-none">
+            <div class="wifi pointer relative">
                 <i class="ri-wifi-line center2"></i>
             </div>
-            <div class="battery pointer relative user-select-none">
+            <div class="battery pointer relative">
                 <i class="ri-battery-fill center2"></i>
             </div>
-            <div class="volume pointer relative user-select-none">
+            <div class="volume pointer relative">
                 <i class="ri-volume-up-line center2"></i>
             </div>
-            <div class="clock flex pointer relative user-select-none">
+            <div class="clock flex pointer relative">
                 <div class="timeDiv"><span class="time"></span></div>
                 <div class="dateDiv"><span class="date"></span></div>
             </div>
-            <div class="notifications pointer relative user-select-none">
+            <div class="notifications-icon pointer relative">
                 <i class="ri-notification-2-line center2"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification-menu absolute user-select-none">
+        <div class="manage-notifications">
+            <span>Manage Notifications</span>
+        </div>
+
+        <div class="notifications-area">
+            <span class="noNoti">No New Notifications</span>
+        </div>
+
+        <div class="features-parent">
+            <span class="collapse">Collapse</span>
+
+            <div class="features">
+                <div class="feature-container">
+                    <div class="box">
+                        <span class="feature-icon material-symbols-outlined">
+                            explore
+                        </span>
+                        <span class="feature-icon-name">Location</span>
+                    </div>
+                    <div class="box">
+                        <span class="feature-icon material-symbols-outlined">
+                            battery_plus
+                        </span>
+                        <span class="feature-icon-name">Battery Saver</span>
+                    </div>
+                    <div class="box">
+                        <span class="feature-icon material-symbols-outlined">
+                            bluetooth
+                        </span>
+                        <span class="feature-icon-name">Bluetooth</span>
+                    </div>
+                    <div class="box">
+                        <span class="feature-icon material-symbols-outlined">
+                            nightlight
+                        </span>
+                        <span class="feature-icon-name">Night Light</span>
+                    </div>
+                    <div class="box">
+                        <span class="feature-icon material-symbols-outlined">
+                            router
+                        </span>
+                        <span class="feature-icon-name">Mobile Hotspot</span>
+                    </div>
+                    <div class="box">
+                        <span class="feature-icon material-symbols-outlined">
+                            flight
+                        </span>
+                        <span class="feature-icon-name">Airplane Mode</span>
+                    </div>
+                    <div class="box">
+                        <span class="feature-icon material-symbols-outlined">
+                            share
+                        </span>
+                        <span class="feature-icon-name">Nearby Sharing</span>
+                    </div>
+                    <div class="box">
+                        <span class="feature-icon material-symbols-outlined">
+                            settings
+                        </span>
+                        <span class="feature-icon-name">All Setting</span>
+                    </div>
+                    <div class="box">
+                        <span class="feature-icon material-symbols-outlined">
+                            5g
+                        </span>
+                        <span class="feature-icon-name">Network</span>
+                    </div>
+                    <div class="box">
+                        <span class="feature-icon material-symbols-outlined">
+                            cast_connected
+                        </span>
+                        <span class="feature-icon-name">Connect</span>
+                    </div>
+                    <div class="box">
+                        <span class="feature-icon material-symbols-outlined">
+                            screen_share
+                        </span>
+                        <span class="feature-icon-name">Project</span>
+                    </div>
+                    <div class="box">
+                        <span class="feature-icon material-symbols-outlined">
+                            vpn_key
+                        </span>
+                        <span class="feature-icon-name">VPN</span>
+                    </div>
+                    <div class="box">
+                        <span class="feature-icon material-symbols-outlined">
+                            center_focus_weak
+                        </span>
+                        <span class="feature-icon-name">Focus Assist</span>
+                    </div>
+                    <div class="box">
+                        <span class="feature-icon material-symbols-outlined">
+                            screenshot_monitor
+                        </span>
+                        <span class="feature-icon-name">Screen Snip</span>
+                    </div>
+                    <div class="box">
+                        <span class="feature-icon material-symbols-outlined">
+                            rss_feed
+                        </span>
+                        <span class="feature-icon-name">Wifi</span>
+                    </div>
+                </div>
+
+                <div class="brightness">
+                    <i class="ri-sun-line brightness-icon"></i>
+                    <div class="slider-div">
+                        <input class="brightness-slider" type="range" min="0" max="100" value="30">
+                    </div>
+                </div>
             </div>
         </div>
     </div>

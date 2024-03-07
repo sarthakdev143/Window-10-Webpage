@@ -26,7 +26,7 @@
         height: inherit;
         padding: 0.5vw;
 
-        --appHoverBG: rgba(209, 215, 223, 0.342);
+        --appHoverBG: rgba(172, 178, 185, 0.342);
         --appHoverBorder: rgba(124, 157, 208, 0.511);
 
         /* On Screen Apps */
