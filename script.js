@@ -35,6 +35,8 @@ dateSpan.innerHTML = dateSpan.textContent.replace(/^0+/, '');
 
 let notificationsIcon = document.querySelector(".notifications-icon");
 let notificationMenu = document.querySelector(".notification-menu");
+let closeNotiMenu = document.querySelector(".close-notification-menu");
+
 let noNoti = document.querySelector(".noNoti");
 let toggleMenu = false;
 
@@ -43,6 +45,7 @@ notificationsIcon.addEventListener("click", function () {
         notificationMenu.style.marginRight = "-29%";
         toggleMenu = false
         noNoti.style.opacity = "0";
+        closeNotiMenu.style.marginLeft = "4vw";
     }
 
     else {
@@ -51,6 +54,15 @@ notificationsIcon.addEventListener("click", function () {
 
         setTimeout(function () {
             noNoti.style.opacity = "1";
+            closeNotiMenu.style.marginLeft = "-8vw";
+
+            closeNotiMenu.addEventListener("click", function () {
+                notificationMenu.style.marginRight = "-29%";
+                closeNotiMenu.style.marginLeft = "4vw";
+                noNoti.style.opacity = "0";
+                toggleMenu = false;
+            })
+
         }, 500)
     }
 })
@@ -87,4 +99,70 @@ features.forEach(function (box) {
             box.style.transform = "scale(1)";
         }, 200);
     });
+});
+
+// Window Start Menu
+let closeWindowStart = document.querySelector(".close-window-start-menu");
+let windowLogo = document.querySelector(".windowLogo");
+let windowStartMenu = document.querySelector(".window-start-menu");
+let isStartMenu = false;
+
+windowLogo.addEventListener("click", function () {
+    if (isStartMenu == false) {
+        windowStartMenu.style.marginBottom = "0";
+        isStartMenu = true;
+    }
+    else {
+        windowStartMenu.style.marginBottom = "-90%";
+        isStartMenu = false;
+    }
+});
+
+closeWindowStart.addEventListener("click", function () {
+    if (isStartMenu == false) {
+        windowStartMenu.style.marginBottom = "0";
+        isStartMenu = true;
+    }
+    else {
+        windowStartMenu.style.marginBottom = "-90%";
+        isStartMenu = false;
+    }
+})
+
+// Start Menu 
+let part1 = document.querySelector(".part-1");
+let isBroad = false;
+
+part1.addEventListener("mouseover", function () {
+    setTimeout(function () {
+        part1.style.width = "40%";
+        isBroad = true;
+    }, 300)
+})
+
+part1.addEventListener("mouseout", function () {
+    setTimeout(function () {
+        part1.style.width = "8%";
+        isBroad = false;
+    }, 300)
+})
+
+let toggleStart = document.querySelector(".toggle-start");
+
+toggleStart.addEventListener("click", function () {
+    if (isBroad == false) {
+        part1.style.width = "40%";
+        isBroad = true;
+    }
+    else {
+        part1.style.width = "8%";
+        isBroad = false;
+    }
+})
+
+// Locomotive JS ft. Smooth Scroll
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('.wrapper-of-img'),
+    smooth: true
 });

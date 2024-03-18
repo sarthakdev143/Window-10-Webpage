@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Window 10 | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="Styles/styles.css">
@@ -13,6 +15,7 @@
     <link rel="stylesheet" href="Styles/taskbar.css">
     <link rel="stylesheet" href="Styles/screen.css">
     <link rel="stylesheet" href="Styles/notification.css">
+    <link rel="stylesheet" href="Styles/window-start-menu.css">
     <link rel="stylesheet" href="Media-Queries/responsive.css">
 </head>
 
@@ -218,8 +221,138 @@
                 </div>
             </div>
         </div>
+
+        <div class="close-notification-menu">CLOSE <span class="material-symbols-outlined">
+                arrow_right_alt
+            </span>
+        </div>
     </div>
 
+    <div class="window-start-menu absolute">
+        <div class="start part-1 user-select-none">
+            <div class="toggle-start top flex">
+                <span class="menu-icon material-symbols-outlined">
+                    menu
+                </span>
+                <span class="icon-name">START</span>
+            </div>
+            <div class="bottom">
+                <div class="bottom-component admin-div flex">
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                    <span>Admin</span>
+                </div>
+                <div class="bottom-component document-div flex">
+                    <span class="material-symbols-outlined">
+                        description
+                    </span>
+                    <span>Document</span>
+                </div>
+                <div class="bottom-component pictures-div flex">
+                    <span class="material-symbols-outlined">
+                        imagesmode
+                    </span>
+                    <span>Pictures</span>
+                </div>
+                <div class="bottom-component settings-div flex">
+                    <span class="material-symbols-outlined">
+                        settings
+                    </span>
+                    <span>Settings</span>
+                </div>
+                <div class="bottom-component power-div flex">
+                    <span class="material-symbols-outlined">
+                        power_settings_new
+                    </span>
+                    <span>Power</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="apps part-2 user-select-none">
+            <div class="wrapper-of-img user-select-none">
+                <img class="user-select-none" src="Resources/apps/menu-app-slider/1.webp" alt="">
+                <img class="user-select-none" src="Resources/apps/menu-app-slider/2.webp" alt="">
+                <img class="user-select-none" src="Resources/apps/menu-app-slider/3.webp" alt="">
+                <img class="user-select-none" src="Resources/apps/menu-app-slider/4.webp" alt="">
+                <img class="user-select-none" src="Resources/apps/menu-app-slider/5.webp" alt="">
+                <img class="user-select-none" src="Resources/apps/menu-app-slider/6.webp" alt="">
+                <img class="user-select-none" src="Resources/apps/menu-app-slider/7.webp" alt="">
+                <div class="end">
+                    <h1>--- You Have Reached The End ---</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-start part-3">
+            <div class="column-1">
+                <div class="headline">
+                    Productivity
+                    <span class="drag-handle material-symbols-outlined">
+                        drag_handle
+                    </span>
+                </div>
+                <div class="dabbe">
+                    <div id="box1" class="dabba">
+                        <img class="center2" src="Resources/apps/Microsoft-Edge.webp" alt="Error 404">
+                        <span class="text">Microsoft-Edge</span>
+                    </div>
+                    <div id="box2" class="dabba">
+                        <img class="center2" src="Resources/apps/microsoftStore.webp" alt="Error 404">
+                        <span class="text">Microsoft Store</span>
+                    </div>
+                    <div id="box3" class="dabba">
+                        <img class="center2" src="Resources/apps/folder-apps.webp" alt="Error 404">
+                    </div>
+                </div>
+            </div>
+            <div class="column-2">
+                <div class="headline">
+                    Explore
+                    <span class="drag-handle material-symbols-outlined">
+                        drag_handle
+                    </span>
+                </div>
+                <div class="dabbe">
+                    <div id="box-1" class="dabba">
+                        <img class="center2" src="Resources/apps/vsCode.webp" alt="Error 404">
+                        <span class="text">VS Code</span>
+                    </div>
+                    <div id="box-2" class="dabba">
+                        <img class="center2" src="Resources/apps/opera.webp" alt="Error 404">
+                        <span class="text">Opera GX Browser</span>
+                    </div>
+                    <div id="box-3" class="dabba">
+                        <img class="center2" src="Resources/apps/fileManager.webp" alt="Error 404">
+                        <span class="text">File Explorer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="headline">
+                    <span>Others</span>
+                    <span class="drag-handle material-symbols-outlined">
+                        drag_handle
+                    </span>
+                </div>
+                <div class="dabbe">
+                    <div class="dabba">
+                        <img class="center2" src="Resources/apps/GitHub.webp" alt="Error 404">
+                        <span class="text">GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="close-window-start-menu">CLOSE <span class="material-symbols-outlined">
+                arrow_downward
+            </span>
+        </div>
+    </div>
+
+    <script src=" https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js">
+    </script>
     <script src="script.js"></script>
 </body>
 

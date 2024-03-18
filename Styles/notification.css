@@ -33,10 +33,12 @@
         margin-top: 1vw;
         margin-bottom: 1vw;
         display: grid;
+        position: relative;
+        z-index: 2;
         justify-content: center;
         font-weight: 600;
         font-size: 1.1vw;
-        /* background: lightcoral; */
+        background: inherit;
 
         .noNoti {
             margin-top: 70%;
@@ -138,6 +140,31 @@
             border-radius: 5vw;
             align-content: center;
             overflow: hidden;
+        }
+    }
+    
+    .close-notification-menu {
+        position: absolute; 
+        z-index: -1;
+        top: 15%;
+        left: 2vw;
+        transform: translate(0, -50%);
+        gap: 0.4vw;
+        padding: 0.8vw;
+        border-top-left-radius: 1vw;
+        border-bottom-left-radius: 1vw;
+        background: inherit;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: all ease 0.3s;
+        
+        .material-symbols-outlined {
+            font-size: 1.2vw;
+        }
+
+        &:hover {
+            padding: 0.7vw 1vw;
         }
     }
 }
